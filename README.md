@@ -1,7 +1,7 @@
-# CityUniversity CS131 (Spring) week 
-**homework and discussion board work**
+# CityUniversity CS131 (Spring) week 5
+### homework and discussion board work
 
-*Misc class related code* </br>
+**Misc class related code** </br>
 Course uses C++ </br>
 A place for me to manage my c++ homework while learning git / github and while studying C++ in school</br>
 
