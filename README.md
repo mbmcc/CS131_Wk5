@@ -1,8 +1,9 @@
 # CityUniversity CS131 (Spring) week 
 **homework and discussion board work**
-*Misc class related code*
-Course uses C++
-A place for me to manage my c++ homework while learning git / github and while studying C++ in school
+
+*Misc class related code* </br>
+Course uses C++ </br>
+A place for me to manage my c++ homework while learning git / github and while studying C++ in school</br>
 
 + the db_[filename] is sample calculations and code from our discussions.
 + the hw_[filename] is the weekly assigned homework
