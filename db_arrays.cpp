@@ -9,6 +9,10 @@ d) Print the 5 values of integer array bestScores in column format.
 #include <iostream>
 #include <iomanip>
 #include <array>
+#include <cstring>
+#include <cstdlib>
+
+using namespace std;
 
 // Example A 
 int main(){
@@ -35,12 +39,28 @@ int main(){
         std::cout << elements << " ";
     std::cout << std::endl;
 
-    for (int elements : bonus)
-        elements = elements + 1;
+    for (int &elements : bonus)
+        elements ++;
 
     for (int elements : bonus)
         std::cout << elements << " ";
     std::cout << std::endl;
     std::cout << std::endl;
+
+    //DB Item C
+    double monthlyTemperature[12] = {};
+    std::cout << "enter the months temperature\n";
+        for (double &elements : monthlyTemperature)
+        std::cin >> elements;
+        for (double elements : monthlyTemperature)
+        std::cout << elements << " ";
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    //DB Item D
+    int bestScore[5] = {10, 12, 22, 33, 17};
+    cout << "The best scores for the round were: ";
+    for (int elements : bestScore)
+        std::cout << setw(5) << elements << endl;
 
 }
