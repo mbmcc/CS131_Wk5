@@ -26,10 +26,13 @@ double findGPA();
 
 int main() {
   
-  array<double, 10> grades {};
-  
+  int entries = 10;
+  array<double, entries> grades {};
+  double gradeSum = 0;
+    
   cout >> "Enter the letter grades from your last 10 classes. \n" ;
   getGrades();
+  averageGrades();
   
 }
 
@@ -41,5 +44,6 @@ getGrades() {
 
 findGPA() {
   for (elements : grades)
-  
+    gradeSum += elements;
+  return gradeSum / entries;
 }
