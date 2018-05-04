@@ -57,10 +57,18 @@ int main(){
     std::cout << std::endl;
     std::cout << std::endl;
 
-    //DB Item D
+    /*//DB Item D
     int bestScore[5] = {10, 12, 22, 33, 17};
     cout << "The best scores for the round were: ";
     for (int elements : bestScore)
         std::cout << setw(5) << elements << endl;
+    */  
+      
+    //DB Item extra
+    array<int, 5> bestScore = {10, 12, 22, 33, 17};
+    cout << "The best scores for the round were: \n";
+    for (int elements : bestScore)
+        std::cout << setw(5) << elements << endl;
+        
 
 }
