@@ -5,7 +5,9 @@ using namespace std;
 
 
 /*///////////////////////////////////////////////
+// Matthew McCourry (CS131 SPR - 2018)
 // Project notes, user stories and objectives
+//
 // (Return the Average of Grades ) 
 // Write a  function which:
 // + gets 10 grades from the user, 
@@ -15,7 +17,6 @@ using namespace std;
 
 /*
  * [ ] get the input from the user gpa format (10 grades)
- * [ ] if letters convert to numbers
  * [ ] find average of number grades (sum / 10)
  * [ ] output gpa
  */
@@ -24,26 +25,28 @@ using namespace std;
 void getGrades();
 double findGPA();
 
-int main() {
-  
-  int entries = 10;
-  array<double, entries> grades {};
-  double gradeSum = 0;
-    
-  cout >> "Enter the letter grades from your last 10 classes. \n" ;
-  getGrades();
-  averageGrades();
-  
-}
+const int entries = 10;
+double gradeSum = 0;
+array<double, entries> grades {};
 
-getGrades() {
+    
+
+int main() {
+
+  
+  cout << "Enter the letter grades from your last 10 classes. \n" ;
+  getGrades();
+   
+} // END OF MAIN
+
+void getGrades() {
   //gets the input from the user in the form of a letter value for each iteration
-  for(elements : grades)
+  for(double elements : grades)
   cin >> grades;
 }
 
-findGPA() {
-  for (elements : grades)
+double findGPA() {
+  for (double elements : grades)
     gradeSum += elements;
   return gradeSum / entries;
 }
