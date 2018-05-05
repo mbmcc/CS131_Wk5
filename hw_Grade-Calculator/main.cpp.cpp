@@ -35,8 +35,9 @@ int main() {
 
   
   cout << "Enter the letter grades from your last 10 classes. \n" ;
-  getGrades();
-   
+  void getGrades();
+  double findGPA
+  
 } // END OF MAIN
 
 void getGrades() {
